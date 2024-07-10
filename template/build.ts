@@ -23,7 +23,8 @@ const getFilesWithExtension = (dir: string, extension: string) => {
 
 const tsFiles = [
   ...getFilesWithExtension(clientDir, '.ts'),
-  ...getFilesWithExtension(serverDir, '.ts')
+  ...getFilesWithExtension(serverDir, '.ts'),
+  ...getFilesWithExtension(sharedDir, '.ts')
 ];
 
 esbuild.buildSync({
@@ -49,7 +50,7 @@ const copyLuaFiles = (srcDir: string, destDir: string) => {
 };
 
 copyLuaFiles(clientDir, path.join(distDir, 'client'));
-copyLuaFiles(sharedDir, path.join(distDir, 'server'));
+copyLuaFiles(serverDir, path.join(distDir, 'server'));
 copyLuaFiles(sharedDir, path.join(distDir, 'shared'));
 
 console.log('Build completed!');
