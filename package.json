@@ -2,7 +2,7 @@
   "author": "mdxwzl",
   "name": "fivem-template",  
   "description": "CLI tool to create a FiveM TypeScript + Lua resource template",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
