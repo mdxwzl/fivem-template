@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "ts-node build.ts",
-    "watch": "nodemon --watch src/**/*.ts --watch src/**/*.lua --exec \"ts-node build.ts\""
+    "watch": "nodemon -e ts,lua --exec \"ts-node build.ts\""
   },
   "devDependencies": {
     "esbuild": "^0.14.0",
@@ -12,9 +12,7 @@
     "typescript": "^4.5.2",
     "@types/node": "^16.11.7",
     "@citizenfx/client": "^2.0.8883-1",
-    "@citizenfx/server": "^2.0.8883-1"
-  },
-  "dependencies": {
+    "@citizenfx/server": "^2.0.8883-1",
     "nodemon": "^3.1.4"
   }
 }
