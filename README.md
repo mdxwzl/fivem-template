@@ -6,7 +6,7 @@ This script helps you generate a FiveM TypeScript project template with support 
 
 ## Usage
 
-1. Run `npx fivem-template`
+1. Run `npx fivem-template@latest`
 2. Follow the prompts to configure your project:
    - **Project Name**: Enter the name of your FiveM project.
    - **Author Name**: Enter your name or the author's name for package.json and fxmanifest.lua.
