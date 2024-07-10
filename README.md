@@ -14,6 +14,20 @@ This script helps you generate a FiveM TypeScript project template with support 
    - **Include ESX Import**: Choose whether to include ESX import in fxmanifest.lua.
 3. Once configured, the template will be generated in your current directory.
 
+## Common Issue
+
+```
+npm error code ETARGET
+npm error notarget No matching version found for fivem-template@x.x.x
+npm error notarget In most cases you or one of your dependencies are requesting
+npm error notarget a package version that doesn't exist.
+```
+
+To fix this issue simply run the following command:
+```
+npm cache clean --force
+```
+
 ## Directory Structure
 
 ```
