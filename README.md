@@ -6,16 +6,13 @@ This script helps you generate a FiveM TypeScript project template with support 
 
 ## Usage
 
-1. Clone this repository or download the script file.
-2. Run `npm install` to install dependencies.
-3. Run `npm run build` to build the projects.
-4. Run `npm run start` to start the generator.
-5. Follow the prompts to configure your project:
+1. Run `npx fivem-template`
+2. Follow the prompts to configure your project:
    - **Project Name**: Enter the name of your FiveM project.
    - **Author Name**: Enter your name or the author's name for package.json and fxmanifest.lua.
    - **Enable Lua 5.4**: Choose whether to enable Lua 5.4 support in fxmanifest.lua.
    - **Include ESX Import**: Choose whether to include ESX import in fxmanifest.lua.
-6. Once configured, the template will be generated in your current directory.
+3. Once configured, the template will be generated in your current directory.
 
 ## Directory Structure
 
