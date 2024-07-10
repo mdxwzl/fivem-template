@@ -1,20 +1,31 @@
 {
   "author": "mdxwzl",
-  "name": "fivem-template",
-  "description": "A simple generator for FiveM resources containing TypeScript.",
+  "name": "fivem-template",  
+  "description": "CLI tool to create a FiveM TypeScript + Lua resource template",
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",
+    "prepublishOnly": "npm run build",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts"
   },
-  "keywords": [],
+  "bin": {
+    "fivem-template": "./fivem-template"
+  },
+  "keywords": [
+    "fivem",
+    "typescript",
+    "template",
+    "cli"
+  ],
+  "dependencies": {
+    "inquirer": "^10.0.1"
+  },
   "devDependencies": {
     "@citizenfx/client": "^2.0.8883-1",
     "@citizenfx/server": "^2.0.8883-1",
     "@types/node": "^16.11.7",
     "fs-extra": "^11.2.0",
-    "inquirer": "^10.0.1",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.2"
   }
