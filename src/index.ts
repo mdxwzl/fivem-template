@@ -62,7 +62,7 @@ function createDirectoryContents(templatePath: string, newProjectPath: string, o
       contents = contents.replace(/<project-name>/g, options.projectName);
       contents = contents.replace(/--<AUTHOR>--/g, `author '${options.author}'`);
       contents = contents.replace(/--<LUA54>--.*(\r?\n|$)/g, options.lua54 ? 'lua54 "yes"\n' : '');
-      contents = contents.replace(/[\t ]*--<ESX_IMPORT>--\r?\n?/, options.esx ? "    '@es_extended/imports.lua'\n" : '');
+      contents = contents.replace(/[\t ]*--<ESX_IMPORT>--\r?\n?/, options.esx ? "    '@es_extended/imports.lua',\n" : '');
 
       const writePath = path.join(newProjectPath, file);
       fs.writeFileSync(writePath, contents, 'utf8');

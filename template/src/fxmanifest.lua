@@ -5,8 +5,9 @@ game 'gta5'
 --<LUA54>--
 
 shared_scripts {
-    'dist/shared/*.lua',
     --<ESX_IMPORT>--
+    'dist/shared/*.js',
+    'dist/shared/*.lua'
 }
 
 client_scripts {
@@ -16,4 +17,5 @@ client_scripts {
 
 server_scripts {
     'dist/server/*.js',
+    'dist/server/*.lua',
 }

@@ -24,8 +24,9 @@ author '<Author Name>'
 lua54 "yes"  -- or "no" based on user input
 
 shared_scripts {
-    'dist/shared/*.lua'
     -- Include ESX import if selected --
+    'dist/shared/*.js',
+    'dist/shared/*.lua'
 }
 
 client_scripts {
@@ -35,6 +36,7 @@ client_scripts {
 
 server_scripts {
     'dist/server/*.js',
+    'dist/server/*.lua',
 }
 ```
 
