@@ -57,3 +57,8 @@ server_scripts {
 ## License
 
 Licensed under the terms of the [Creative Commons Attribution-ShareAlike 4.0 International License](https://github.com/mdxwzl/fivem-template/blob/main/LICENSE-CC-BY).
+
+## Useful Links
+[Github Repository](https://github.com/mdxwzl/fivem-template)
+[NPM JS](https://www.npmjs.com/package/fivem-template)
+[Discord](https://discord.com/users/337576581406916631)
